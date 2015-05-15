@@ -44,6 +44,7 @@ import java.util.List;
 public class TeMeApp extends Application {
     
     //感觉很诡异
+    // 什么时候是主线, 什么时候是分支
     
 
     // 退出应用程序,销毁Activity相关
