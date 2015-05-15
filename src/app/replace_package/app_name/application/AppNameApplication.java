@@ -60,6 +60,9 @@ public class AppNameApplication extends Application {
     public MainActivity mainActivity = null;
     private ArrayList<TeMeCategory> teMeCategories = null;
     
+    
+    
+    //
     public ArrayList<TeMeCategory> getTeMeCategories() {
         return teMeCategories;
     }
