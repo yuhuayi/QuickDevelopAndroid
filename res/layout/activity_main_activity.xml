@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray"
+              android:orientation="vertical">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/chatbg"
+            android:orientation="vertical">
+        <FrameLayout
+                android:background="@color/white"
+                android:id="@+id/main_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:orientation="horizontal"
+                android:layout_weight="1">
+        </FrameLayout>
+
+        <LinearLayout
+                android:id="@+id/webus_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_56"
+                android:orientation="vertical">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_56"
+                    android:background="@color/black">
+                <RelativeLayout
+                        android:id="@+id/tab0_View"
+                        android:layout_width="0dp"
+                        android:background="@drawable/tab_1_unselected"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                        <ImageView
+                                android:id="@+id/tab0_IMG"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/icon_maintab_wherebus_normal"/>
+
+                        <TextView
+                                android:id="@+id/tab0_TV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="发现"
+                                android:textStyle="bold"
+                                android:textColor="@drawable/tab_tv_selector"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:id="@+id/tab1_View"
+                        android:layout_width="0dp"
+                        android:background="@drawable/tab_0_unselected"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                        <ImageView
+                                android:id="@+id/tab1_IMG"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/icon_maintab_transfer_normal"/>
+
+                        <TextView
+                                android:id="@+id/tab1_TV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="圈子"
+                                android:textStyle="bold"
+                                android:textColor="@drawable/tab_tv_selector"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:id="@+id/tab2_View"
+                        android:layout_width="0dp"
+                        android:background="@drawable/tab_2_selected"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                        <ImageView
+                                android:id="@+id/tab2_IMG"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/icon_maintab_line_normal"/>
+
+                        <TextView
+                                android:id="@+id/tab2_TV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="发布"
+                                android:textStyle="bold"
+                                android:textColor="@drawable/tab_tv_selector"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/tab3_View"
+                        android:layout_width="0dp"
+                        android:background="@drawable/tab_3_unselected"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                        <ImageView
+                                android:id="@+id/tab3_IMG"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/icon_maintab_station_normal"/>
+
+                        <TextView
+                                android:id="@+id/tab3_TV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="消息"
+                                android:textStyle="bold"
+                                android:textColor="@drawable/tab_tv_selector"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/tab4_View"
+                        android:layout_width="0dp"
+                        android:background="@drawable/tab_4_unselected"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                        <ImageView
+                                android:id="@+id/tab4_IMG"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerInside"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/icon_maintab_self_normal"/>
+                        <TextView
+                                android:id="@+id/tab4_TV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="我的"
+                                android:textStyle="bold"
+                                android:textColor="@drawable/tab_tv_selector"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

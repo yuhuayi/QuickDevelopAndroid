@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/teme_title_color"
+            android:layout_height="@dimen/dp_48">
+        <ImageView  style="@style/title_left_bt_style"
+                   android:id="@+id/title_back_img"/>
+           
+        <TextView android:layout_centerInParent="true"
+                  android:layout_width="wrap_content"
+                  android:textSize="@dimen/sp_18"
+                  android:textStyle="bold"
+                  android:textColor="@color/black"
+                  android:layout_height="wrap_content" android:text="类型" android:id="@+id/textView"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0_5"
+                android:background="@android:color/darker_gray" android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+    
+	<TextView 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="全部类型"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:textColor="#0473fe"
+        />
+	 <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:background="@android:color/darker_gray"/>
+	 
+	 <TextView 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="品牌设计"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        />
+	 <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:background="@android:color/darker_gray"/>
+	 
+	 <TextView 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="网页设计"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        />
+	 <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:background="@android:color/darker_gray"/>
+	 
+	 <TextView 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="电商/网店"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        />
+	 <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:background="@android:color/darker_gray"/>
+	 
+	 <TextView 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="界面/app"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        />
+	 <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:background="@android:color/darker_gray"/>
+	 
+	 <TextView 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="工业/产品"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        />
+	 <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:background="@android:color/darker_gray"/>
+	 
+	 <TextView 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="动画/影视"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        />
+	 <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:background="@android:color/darker_gray"/>
+	 
+	 <TextView 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="摄影/摄像"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        />
+	 <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:background="@android:color/darker_gray"/>
+	 
+	 <TextView 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="环境/导视"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        />
+	 <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:background="@android:color/darker_gray"/>
+	 
+	 <TextView 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="三维制作"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        />
+	 <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:background="@android:color/darker_gray"/>
+	 
+	 <TextView 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="其他"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        />
+	 <View 
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_gray" 
+	     />
+</LinearLayout>

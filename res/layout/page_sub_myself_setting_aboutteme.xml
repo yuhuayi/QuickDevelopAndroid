@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/teme_title_color"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/title_rl"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:background="@color/teme_title_color"
+            android:layout_height="@dimen/dp_48">
+        <ImageView
+                style="@style/title_left_bt_style"
+                android:id="@+id/title_back_img"/>
+
+        <TextView android:layout_centerInParent="true"
+                  android:layout_width="wrap_content"
+                  android:textSize="@dimen/sp_18"
+                  android:textStyle="bold"
+                  android:textColor="@color/black"
+                  android:layout_height="wrap_content" android:text="" android:id="@+id/textView"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/teme_title_color"
+            android:orientation="vertical">
+
+        <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:orientation="vertical">
+            <TextView
+                    android:textColor="#464646"
+                    android:text="1.0"
+                    android:id="@+id/app_version_tv"
+
+                    android:textSize="@dimen/dp_18"
+                    android:paddingRight="@dimen/dp_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_gravity="right|bottom"/>
+            <ImageView
+                    android:src="@drawable/teme_about"
+                    android:layout_width="@dimen/dp_118"
+                    android:padding="@dimen/dp_2"
+                    android:layout_height="@dimen/dp_118" android:layout_gravity="right|bottom"
+                    />
+        </FrameLayout>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView
+                    android:textColor="#496587"
+                    android:text="用户协议"
+                    android:id="@+id/user_protocol_tv"
+                    android:padding="@dimen/dp_6"
+                    android:layout_marginBottom="@dimen/dp_4"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/dp_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:textColor="#464646"
+                    android:text="© 2015 techuangyi,inc."
+                    android:textSize="@dimen/dp_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

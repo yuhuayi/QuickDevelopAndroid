@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentTop="true"
+        android:background="@color/teme_title_color" >
+
+        <ImageView
+            android:id="@+id/title_back_img"
+           style="@style/title_left_bt_style" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="开通特创易专区"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_50"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icworn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="特创意"
+                android:textSize="@dimen/sp_20" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_10"
+        android:text="创建你的营销专区，参与优质项目"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_20" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="特创意是一个丰富、高效、可靠的创意需求对接平台。改变传统创意服务组织模式，打造专业的&quot;创意圈子&quot; , 让有才华的创意人 (团队) 脱颖而出。"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/sp_14" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_0_0_5"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@color/background_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         android:layout_marginTop="@dimen/dp_30"
+        >
+        <ImageView 
+             android:layout_width="@dimen/dp_44"
+        	 android:layout_height="@dimen/dp_44"
+        	 android:src="@drawable/icon"
+            android:layout_marginLeft="@dimen/dp_20"	 
+            />
+        <LinearLayout 
+             android:layout_width="wrap_content"
+        	 android:layout_height="wrap_content"
+        	 android:orientation="vertical"
+        	 android:layout_marginLeft="@dimen/dp_20"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+        	 	android:layout_height="wrap_content"
+        	 	android:text="实名认证(已认证)"
+        	 	android:textSize="@dimen/sp_20"
+                android:textColor="@color/gray"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+        	 	android:layout_height="wrap_content"
+        	 	android:text="选择个人或公司,上传真实身份信息,编辑常用名。"
+        	 	android:textSize="@dimen/sp_14"
+        	 	android:textColor="@color/gray"
+                />
+        </LinearLayout>
+    </LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:orientation="horizontal"
+        >
+        <ImageView 
+             android:layout_width="@dimen/dp_44"
+        	 android:layout_height="@dimen/dp_44"
+        	 android:src="@drawable/icon"
+        	 android:layout_marginLeft="@dimen/dp_20"
+            />
+        <LinearLayout 
+             android:layout_width="wrap_content"
+        	 android:layout_height="wrap_content"
+        	 android:orientation="vertical"
+        	  android:layout_marginLeft="@dimen/dp_20"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+        	 	android:layout_height="wrap_content"
+        	 	android:text="作品认证(待认证)"
+        	 	android:textColor="@color/gray"
+        	 	android:textSize="@dimen/sp_20"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+        	 	android:layout_height="wrap_content"
+        	 	android:text="通过你的作品，评审创意能力"
+        	 	android:textColor="@color/gray"
+        	 	android:textSize="@dimen/sp_14"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <Button 
+	        android:layout_width="wrap_content"
+   	    	android:layout_height="wrap_content"
+   	    	android:background="@drawable/button_blue_shape"
+   	    	android:text="立即认证"
+            android:layout_gravity="center_horizontal"
+   	    	android:textColor="@color/white"
+   	    	android:textSize="@dimen/sp_18"
+   	    	android:paddingLeft="@dimen/dp_38"
+   	    	android:paddingRight="@dimen/dp_38"
+   	    	android:paddingTop="@dimen/dp_10"
+   	    	android:paddingBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_16"
+	        />
+</LinearLayout>

@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title></title>
+</head>
+<body style="font-size:14px">
+<div style="width:100%; margin:0 auto; line-height:25px;">
+<h4 align="center">版权信息 （android）：</h4>
+  <p>&nbsp;&nbsp;&nbsp;(一) 【本服务形式】</p>
+  <p>&nbsp;&nbsp;&nbsp;您可以通过手机等终端以客户端的形式使用本服务，同时，金色号角会不断丰富内容，方便您使用。当您使用本服务时，您应选择与您的终端、系统等相匹配的本软件版本，否则，您可能无法正常使用本服务。</p>
+<p>&nbsp;&nbsp;&nbsp;(二)【用户个人信息保护】</p>
+<p>&nbsp;&nbsp;&nbsp;保护用户个人信息是金色号角的一项基本原则，金色号角将会采取合理的措施保护用户的个人信息。除法律法规规定的情形外，未经用户许可腾讯不会向第三方公开、透露用户个人信息。</p>
+  <p> &nbsp;&nbsp;&nbsp;(三)【知识产权声明】</p><br/>
+   <p> &nbsp;&nbsp;&nbsp;金色号角软件的著作权、商标权、专利权、商业秘密等知识产权，以及与本软件相关的所有信息内容（均受中华人民共和国法律法规和相应的国际条约保护，金色号角依法享有上述相关知识产权，但相关权利人依照法律规定应享有的权利除外。</p>
+ &nbsp;&nbsp;&nbsp;&nbsp;<br/>
+ <p>&nbsp;&nbsp;&nbsp;金色号角是一个自由人的自由联合，是影视从业者在线服务交易平台，您可以轻松预约不同风格的摄像师、租赁各种专业的影视设备，支付功能快捷，服务资源广阔。</p>
+<b>&nbsp;&nbsp;&nbsp;本APP由北京金色号角影视策划有限公司版权所有</b><br/>
+<b>&nbsp;&nbsp;&nbsp;联系我们:</b><br/>
+<b>&nbsp;&nbsp;&nbsp;客服电话：400-600-0905</b><br/>
+&nbsp;&nbsp;&nbsp;公司网址: <a href="http://www.goldav.com/">www.goldav.com</a> <br/>
+&nbsp;&nbsp;&nbsp;金色号角官方交流群：339779298 <br/>
+<h4 align="center">金色号角公司　版权所有</h4>
+
+</p>
+</div>
+</body>
+</html>

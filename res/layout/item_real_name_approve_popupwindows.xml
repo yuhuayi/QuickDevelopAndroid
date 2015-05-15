@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_transparent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:id="@+id/ll_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#dfdfdf"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/dp_12"
+                android:text="您未进行实名认证,暂不能开通特创意专区"
+                android:textColor="@color/gray"/>
+
+        <TextView
+                android:id="@+id/approve_real_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="@color/gray_blue"
+                android:textSize="@dimen/sp_18"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_gravity="center" android:text="实名认证"/>
+
+        <TextView
+                android:id="@+id/pop_cancle_tv"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/dp_6"
+                android:textColor="@color/semi_transparent"
+                android:textSize="@dimen/sp_18"
+                android:text="取消"/>
+    </LinearLayout>
+
+</RelativeLayout>

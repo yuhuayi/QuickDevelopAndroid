@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chatbg" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        style="@style/title_base_style" >
+
+        <include
+            android:id="@+id/exit"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            layout="@layout/commom_back_btn" />
+
+        <TextView
+            android:id="@+id/title_name"
+            style="@style/tv_base_style"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="相片"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_ok_or_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_complete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="完成"
+            android:textColor="#ff495a"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_look"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="预览" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_ok_or_cancel"
+        android:layout_below="@id/rl_title"
+        android:layout_margin="0dp"
+        android:horizontalSpacing="3dp"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="3dp" >
+    </GridView>
+
+</RelativeLayout>

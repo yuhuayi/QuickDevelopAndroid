@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+            android:id="@+id/title_rl"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:background="@color/teme_title_color"
+            android:layout_height="@dimen/dp_48">
+        <ImageView
+                style="@style/title_left_bt_style"
+                   android:id="@+id/title_back_img"/>
+
+        <TextView android:layout_centerInParent="true"
+                  android:layout_width="wrap_content"
+                  android:textSize="@dimen/sp_18"
+                  android:textStyle="bold"
+                  android:textColor="@color/black"
+                  android:layout_height="wrap_content" android:text="意见反馈" android:id="@+id/textView"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+                  xmlns:android="http://schemas.android.com/apk/res/android">
+        <EditText
+                android:id="@+id/feedback_content"
+                android:layout_width="fill_parent" android:layout_height="@dimen/dp_108"
+                android:textColor="@android:color/black" android:gravity="top"
+                android:background="@drawable/input_textfield"
+                android:padding="10.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip"
+                android:layout_marginRight="10.0dip"
+                android:textSize="@dimen/sp_16"
+                android:hint="我们的成长离不开您的支持，请描述您的详细需求和服务体验的反馈，我们会尽快帮您解决。客服电话：400-600-0905" android:maxLength="500" android:imeOptions="actionNext"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_8" >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请输入3-50个字符!"
+                    android:textColor="@android:color/black" />
+
+            <TextView
+                    android:id="@+id/hint_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="0/50"
+                    android:textColor="@android:color/black" />
+        </RelativeLayout>
+        <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginRight="@dimen/dp_24"
+                android:paddingLeft="@dimen/dp_44"
+                android:paddingRight="@dimen/dp_44"
+                android:paddingTop="@dimen/dp_8"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:paddingBottom="@dimen/dp_8"
+                android:background="@drawable/button_blue_shape"
+                android:text="提交"
+                />
+    </LinearLayout>
+</LinearLayout>

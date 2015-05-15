@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/item_product_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_12"
+        android:paddingLeft="@dimen/dp_8"
+        android:text="角纸设计出版工作室海报(6p)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_20" />
+
+    <ImageView
+        android:id="@+id/atttion_product_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_12" />
+
+    <com.view.common.GridViewForScrollView
+        android:id="@+id/atttion_product_item_gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:horizontalSpacing="@dimen/dp_2"
+        android:numColumns="auto_fit"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/dp_2" />
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+	    >
+	    <TextView 
+	         android:id="@+id/category_tv"
+	         android:layout_width="wrap_content"
+        	 android:layout_height="wrap_content"
+        	 android:text=""
+        	 android:textSize="@dimen/dp_18"
+        	 android:paddingLeft="@dimen/dp_8"
+	        />
+	    <TextView 
+	         android:id="@+id/band_tv"
+	         android:layout_width="wrap_content"
+        	 android:layout_height="wrap_content"
+        	 android:text=""
+        	 android:textSize="@dimen/dp_18"
+        	 android:paddingLeft="@dimen/dp_12"
+	        />
+	</LinearLayout>
+    <TextView
+        android:id="@+id/item_product_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+       
+        android:layout_marginTop="@dimen/dp_12"
+        android:paddingLeft="@dimen/dp_8"
+        android:text=""
+        android:textColor="@color/gray"
+        android:textSize="@dimen/sp_16" />
+	<TextView
+        android:id="@+id/item_product_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+      
+        android:layout_marginTop="@dimen/dp_12"
+        android:paddingLeft="@dimen/dp_8"
+        android:text=""
+        android:textColor="@color/gray"
+        android:textSize="@dimen/sp_16" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_6"
+        android:layout_weight="1.46"
+        android:background="@color/white" >
+    </RelativeLayout>
+
+</LinearLayout>

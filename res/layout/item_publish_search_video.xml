@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/video_photo_iv"
+            android:layout_width="@dimen/dp_108"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_12"
+            android:scaleType="fitXY"
+            android:src="@drawable/a" />
+
+        <TextView
+            android:id="@+id/video_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/video_photo_iv"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_toRightOf="@id/video_photo_iv"
+            android:ellipsize="end"
+            android:maxLength="20"
+            android:text="信息时报:救人真相大白，警方失职尤需追啊啊啊111111111111111啊啊"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/play_sum_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/video_photo_iv"
+            android:layout_below="@id/video_title"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_toRightOf="@id/video_photo_iv"
+            android:text="播放:332"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/video_photo_iv"
+            android:layout_below="@id/video_title"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_toRightOf="@id/play_sum_tv"
+            android:text="发布:2天前"
+            android:textColor="@color/gray" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content" >
+
+        <com.view.common.CircleImageView
+            android:id="@+id/find_friend_photo"
+            android:layout_width="@dimen/dp_68"
+            android:layout_height="@dimen/dp_68"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_14"
+            android:src="@drawable/head_portrait" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/find_friend_photo"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_34" >
+
+                <TextView
+                    android:id="@+id/find_friend_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:text="苏橙橙"
+                    android:textSize="@dimen/sp_16" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/find_friend_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="正邦设计总监"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/partener_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="合作七次"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_6"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/attention_ll"
+                layout="@layout/item_guanzhu_layou" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginTop="@dimen/dp_2"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/pro_list_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:orientation="vertical" >
+    </LinearLayout>
+	 <LinearLayout	    
+        android:id="@+id/pro_list_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:visibility="gone"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <ImageView 
+        android:id="@+id/pull_up_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_xiala"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dp_4"
+        />
+</LinearLayout>

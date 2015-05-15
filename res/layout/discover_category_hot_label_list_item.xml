@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="#dfdfdf"
+        android:layout_height="@dimen/dp_118">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_18"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="热门标签" android:id="@+id/textView" android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+    <com.view.common.FlowLayout
+            android:id="@+id/hot_tag_flowlayout"
+            android:layout_width="fill_parent"
+            android:gravity="start|top"
+            android:layout_height="wrap_content" android:layout_below="@+id/textView">
+
+    </com.view.common.FlowLayout>
+</RelativeLayout>
+

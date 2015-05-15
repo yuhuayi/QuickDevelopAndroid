@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+        >
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.view.common.CircleImageView
+                android:id="@+id/find_friend_photo"
+                android:layout_width="@dimen/dp_68"
+                android:layout_height="@dimen/dp_68"
+                android:layout_centerVertical="true"
+                android:src="@drawable/head_portrait"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_marginLeft="@dimen/dp_6"
+                />
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_toRightOf="@id/find_friend_photo"
+                >
+            <TextView
+                    android:id="@+id/find_friend_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"
+                    android:textSize="@dimen/sp_16"
+                    android:layout_marginTop="@dimen/dp_6"
+                    />
+            <TextView
+                    android:id="@+id/find_friend_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:textSize="@dimen/sp_14"
+                    android:text="签名"
+                    android:textColor="@color/gray"
+                    />
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    >
+                <TextView
+                        android:id="@+id/tv_find_friend_discover"
+                        style="@style/teme_label_style"
+                        android:text="发现:0"
+
+                        />
+                <TextView
+                        android:id="@+id/tv_find_friend_zuopin"
+                        android:text="作品:0"
+                        style="@style/teme_label_style"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_6">
+            <include android:id="@+id/attention_ll" layout="@layout/item_guanzhu_layou"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

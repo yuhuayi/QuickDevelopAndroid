@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <RelativeLayout
+            android:id="@+id/title_rl"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:background="@color/teme_title_color"
+            android:layout_height="@dimen/dp_48">
+        <ImageView  style="@style/title_left_bt_style"
+                   android:id="@+id/title_back_img"
+                  />
+
+        <TextView android:layout_centerInParent="true"
+                  android:layout_width="wrap_content"
+                  android:textSize="@dimen/sp_18"
+                  android:textStyle="bold"
+                  android:textColor="@color/black"
+                  android:layout_height="wrap_content" android:text="添加照片" android:id="@+id/textView"/>
+        
+        <TextView 
+            android:id="@+id/title_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_16"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_12"
+             android:textColor="#0067ff"
+            />
+    </RelativeLayout>
+		<GridView
+                android:visibility="visible"
+                android:id="@+id/activity_gridview_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="4"
+                android:paddingTop="@dimen/dp_5" >
+        </GridView>
+	
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+    <com.view.common.CircleImageView
+            android:id="@+id/head_portrait_img"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:src="@drawable/head_portrait" android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" android:layout_toRightOf="@+id/head_portrait_img"
+            android:layout_marginLeft="@dimen/dp_8">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:text="苏成成"
+                  android:paddingLeft="@dimen/dp_6"
+                  android:paddingRight="@dimen/dp_6"
+                  android:paddingBottom="@dimen/dp_4"
+                  android:paddingTop="@dimen/dp_4"
+                  android:textColor="@color/black" android:textSize="@dimen/sp_18"
+                  android:layout_gravity="center_vertical" android:id="@+id/user_name_tv"/>
+        <TextView android:layout_width="wrap_content"
+                  android:paddingLeft="@dimen/dp_6"
+                  android:id="@+id/user_position_tv"
+                  android:paddingRight="@dimen/dp_6"
+                  android:paddingBottom="@dimen/dp_4"
+                  android:paddingTop="@dimen/dp_4"
+                  android:layout_height="wrap_content" android:text="设计师"
+                  android:textColor="@color/gray" android:textSize="@dimen/sp_16"
+                  android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <Button android:layout_width="wrap_content"
+            android:id="@+id/invite_user_bt"
+            android:paddingLeft="@dimen/dp_24"
+            android:paddingRight="@dimen/dp_24"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_blue_shape"
+            android:layout_height="wrap_content" android:text="邀请"
+            android:textColor="@color/white" android:textSize="@dimen/sp_16"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true" android:layout_marginRight="@dimen/dp_16"/>
+    <LinearLayout
+            android:id="@+id/support_query_count_ll"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_6"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:padding="@dimen/dp_6"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content"
+                      android:gravity="center"
+                      android:id="@+id/support_user_count_tv"
+                      android:background="@drawable/support_bg"
+                      android:layout_height="wrap_content" android:text="0"
+                      android:textColor="@color/gray_blue" android:textSize="@dimen/sp_16"
+                      android:layout_gravity="center"/>
+            <TextView android:layout_width="wrap_content"
+                      android:paddingTop="@dimen/dp_6"
+                      android:textColor="@color/gray_blue"
+                      android:layout_height="wrap_content" android:text="认同"
+                      android:textSize="@dimen/sp_16"
+                      android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+                android:padding="@dimen/dp_6"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content"
+                      android:gravity="center"
+                      android:id="@+id/query_user_count_tv"
+                      android:background="@drawable/support_bg"
+                      android:layout_height="wrap_content" android:text="0"
+                      android:textColor="@color/gray" android:textSize="@dimen/sp_16"
+                      android:layout_gravity="center_vertical"/>
+            <TextView android:layout_width="wrap_content"
+                      android:gravity="center"
+                      android:paddingTop="@dimen/dp_6"
+                      android:layout_height="wrap_content" android:text="质疑"
+                      android:textColor="@color/gray" android:textSize="@dimen/sp_16"
+                      android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

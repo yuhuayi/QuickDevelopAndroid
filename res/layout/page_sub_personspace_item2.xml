@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:background="@drawable/button_24_gray_shape"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true" android:layout_alignParentLeft="true">
+        <TextView
+                android:id="@+id/product_switch_tv"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:layout_margin="@dimen/dp_4"
+                android:layout_weight="1"
+                android:background="@drawable/button_24_white_shape"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_height="match_parent" android:text="作品"/>
+
+        <TextView
+                android:id="@+id/discover_switch_tv"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="@dimen/dp_4"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_height="match_parent" android:text="发现"/>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+            android:id="@+id/sub_person_space_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</LinearLayout>

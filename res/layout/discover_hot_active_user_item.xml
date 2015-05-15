@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:id="@+id/active_user_rl"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:padding="@dimen/dp_6"
+            android:layout_margin="@dimen/dp_4"
+            android:layout_height="wrap_content">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:text="活跃达人"
+                  android:textColor="@color/black" android:textSize="@dimen/sp_18"
+                  android:layout_gravity="center_vertical" android:id="@+id/textView2"
+                  android:layout_centerVertical="true" android:layout_toRightOf="@+id/head_portrait_img"
+                  />
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/expand_close"
+                   android:layout_gravity="center_vertical" android:layout_centerVertical="true"
+                   android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_0_5"
+          android:background="@color/half_gray"
+          android:layout_gravity="center_vertical"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:id="@+id/main_discover_hot_active_user_ll"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+    </LinearLayout>
+</LinearLayout>

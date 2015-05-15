@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="line"
+       xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 内部颜色 -->
+    <stroke  android:color="@color/teme_title_color"
+           />
+    <size android:height="@dimen/dp_0_5" />
+</shape>
+
+

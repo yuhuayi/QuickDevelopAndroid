@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teme_title_color"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+            android:layout_width="match_parent"           
+            android:layout_height="@dimen/dp_48">
+        <ImageView
+                   android:id="@+id/title_back_img"  style="@style/title_left_bt_style"/>
+        <TextView android:layout_centerInParent="true"
+                  android:layout_width="wrap_content"
+                  android:textSize="@dimen/sp_18"
+                  android:textStyle="bold"
+                  android:textColor="@color/black"
+                  android:layout_height="wrap_content" android:text="添加视频" android:id="@+id/textView"/>
+    </RelativeLayout>
+    
+	<RelativeLayout 
+        android:id="@+id/search_video_rl"
+   	    android:layout_width="match_parent"
+   	   	android:layout_height="@dimen/dp_50"
+   	   	android:background="@color/white"
+   	    >
+   	    <TextView 
+   	         android:layout_width="wrap_content"
+   	   		 android:layout_height="wrap_content"
+   	   		 android:textSize="@dimen/sp_18"
+   	   		 android:text="优酷视频搜索"
+             android:textColor="@color/black"
+   	   		 android:layout_centerVertical="true"
+   	   		 android:layout_marginLeft="@dimen/dp_14"
+   	        />
+   	    <ImageView 
+   	         android:layout_width="wrap_content"
+   	    	 android:layout_height="wrap_content"
+   	    	 android:layout_centerVertical="true"
+   	    	 android:layout_alignParentRight="true"
+   	    	 android:layout_marginRight="@dimen/dp_14"
+   	    	 android:background="@drawable/expand_close"
+   	        /> 
+   	        
+   	    <View 
+   	        android:layout_width="wrap_content"
+   	    	android:layout_height="@dimen/dp_0_0_5"
+   	    	android:layout_alignParentBottom="true"
+   	    	android:background="@color/background_gray"
+   	    	android:layout_marginLeft="@dimen/dp_14"
+   	        />
+   	</RelativeLayout>
+   	
+	<RelativeLayout 
+	    android:id="@+id/video_address_rl"
+   	    android:layout_width="match_parent"
+   	   	android:layout_height="@dimen/dp_50"
+   	   	android:background="@color/white"
+   	    >
+   	    <TextView 
+   	         android:layout_width="wrap_content"
+   	   		 android:layout_height="wrap_content"
+   	   		 android:textSize="@dimen/sp_18"
+   	   		 android:text="视频地址填写"
+             android:textColor="@color/black"
+   	   		 android:layout_centerVertical="true"
+   	   		 android:layout_marginLeft="@dimen/dp_14"
+   	        />
+   	    <ImageView 
+   	         android:layout_width="wrap_content"
+   	    	 android:layout_height="wrap_content"
+   	    	 android:layout_centerVertical="true"
+   	    	 android:layout_alignParentRight="true"
+   	    	 android:layout_marginRight="@dimen/dp_14"
+   	    	 android:background="@drawable/expand_close"
+   	        /> 
+   	        
+   	    <View 
+   	        android:layout_width="wrap_content"
+   	    	android:layout_height="@dimen/dp_0_0_5"
+   	    	android:layout_alignParentBottom="true"
+   	    	android:background="@color/background_gray"
+   	    	android:layout_marginLeft="@dimen/dp_14"
+   	        />
+   	</RelativeLayout>
+</LinearLayout>

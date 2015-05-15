@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+        android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+   		android:background="@color/teme_title_color"
+   		
+        >
+        <TextView 
+             android:id="@+id/tv_report"
+             android:layout_width="wrap_content"
+   			 android:layout_height="wrap_content"
+   			 android:text="实名认证"
+   			 android:layout_centerInParent="true"
+   			 android:layout_marginTop="@dimen/dp_14"
+   			 android:textSize="@dimen/sp_18"
+   			 android:textStyle="bold"
+   			 android:textColor="@color/black"
+            />
+        
+        <ImageView
+                style="@style/title_left_bt_style"
+                   android:id="@+id/title_back_img"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:text="完成"
+   			android:textSize="@dimen/sp_16"
+   			android:textColor="#0067ff"
+   			android:layout_centerVertical="true"
+   			android:layout_alignParentRight="true"
+   			android:layout_marginRight="@dimen/dp_10"
+            />
+        
+    </RelativeLayout>
+    
+	<EditText android:layout_width="match_parent" android:layout_height="@dimen/input_item_height"
+                      android:background="@null"
+                      android:text=""
+                      android:singleLine="true"
+                      android:gravity="center_vertical"
+                      android:textSize="@dimen/sp_16"
+                      android:textColorHint="@color/half_gray"
+                      android:textColor="@color/black"
+                      android:hint="真实名字或常用艺名"
+                      android:padding="@dimen/dp_2"
+                      android:layout_marginLeft="18dp"
+                      android:layout_centerVertical="true"/>
+	
+	<RelativeLayout 
+	    android:layout_width="match_parent" 
+	    android:layout_height="wrap_content"
+	    android:background="@color/background_gray"
+	    >
+	    <TextView 
+	        android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content"
+	    	android:text="请使用小伙伴们认识的名字，提交后不能更改。"
+	    	android:layout_marginLeft="18dp"	
+	    	android:textSize="@dimen/sp_14"    
+	    	android:textColor="@color/gray"	
+	    	android:layout_marginTop="@dimen/dp_2"
+	    	android:paddingBottom="@dimen/dp_4"
+	    />
+	    
+	</RelativeLayout>
+	
+	<EditText android:layout_width="match_parent" android:layout_height="@dimen/input_item_height"
+                      android:background="@null"
+                      android:text=""
+                      android:singleLine="true"
+                      android:gravity="center_vertical"
+                      android:textSize="@dimen/sp_16"
+                      android:textColorHint="@color/half_gray"
+                      android:textColor="@color/black"
+                      android:hint="身份证姓名"
+                      android:padding="@dimen/dp_2"
+                      android:layout_marginLeft="18dp"
+                      android:layout_centerVertical="true"/>
+	
+	<ImageView 
+   	     android:layout_width="match_parent"
+   	     android:layout_height="@dimen/dp_0_5"
+         android:layout_marginLeft="@dimen/dp_18"
+   	     android:background="@android:color/darker_gray" />
+	
+	<EditText android:layout_width="match_parent" android:layout_height="@dimen/input_item_height"
+                      android:background="@null"
+                      android:text=""
+                      android:singleLine="true"
+                      android:gravity="center_vertical"
+                      android:textSize="@dimen/sp_16"
+                      android:textColorHint="@color/half_gray"
+                      android:textColor="@color/black"
+                      android:hint="身份证号"
+                      android:padding="@dimen/dp_2"
+                      android:layout_marginLeft="18dp"
+                      android:layout_centerVertical="true"/>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+   	    android:layout_height="match_parent"
+   	    android:background="@color/background_gray"
+   	    android:orientation="vertical"
+	    >
+	    <Button 
+	        android:id="@+id/positive_picture_bt"
+	        android:layout_width="match_parent"
+   	    	android:layout_height="wrap_content"
+   	    	android:background="@drawable/button_blue_shape"
+   	    	android:text="上传身份证照片(正面)"
+   	    	android:textColor="@color/white"
+   	    	android:textSize="@dimen/sp_18"
+   	    	android:padding="@dimen/dp_12"
+   	    	android:layout_marginTop="@dimen/dp_22"
+   	    	android:gravity="center_horizontal"
+   	    	android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginRight="@dimen/dp_18"
+	        />
+	    
+	    <Button 
+	        android:id="@+id/negative_picture_bt"
+	        android:layout_width="match_parent"
+   	    	android:layout_height="wrap_content"
+   	    	android:background="@drawable/button_blue_shape"
+   	    	android:text="上传身份证照片(反面)"
+   	    	android:textColor="@color/white"
+   	    	android:textSize="@dimen/sp_18"
+   	    	android:padding="@dimen/dp_12"
+   	    	android:layout_marginTop="@dimen/dp_22"
+   	    	android:gravity="center_horizontal"
+   	    	android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginRight="@dimen/dp_18"
+            
+	        />
+	    
+	</LinearLayout>
+</LinearLayout>

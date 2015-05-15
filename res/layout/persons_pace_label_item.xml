@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="@dimen/dp_40"
+              android:orientation="horizontal">
+    <LinearLayout
+        	android:id="@+id/label_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal">
+        <TextView
+                style="@style/label_style"
+                android:background="@color/white"
+                android:gravity="center"
+                android:id="@+id/label_name_tv"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:text="APP设计"/>
+
+        <TextView
+                android:id="@+id/label_count_tv"
+                style="@style/label_style"
+                android:background="@color/btn_green_normal"
+                android:gravity="center"
+                android:text="26"
+                android:textColor="@color/white"/>
+    </LinearLayout>
+</LinearLayout>

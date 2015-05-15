@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/teme_title_color"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include android:id="@+id/search_input_ll" layout="@layout/search_input_layout"/>
+    <com.view.pulltorefresh.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto/com.zhengbang.TeMe"
+            android:id="@+id/main_discover_categoryr_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/teme_title_color"
+            android:divider="@drawable/teme_listview_divider"
+            ptr:ptrDrawableStart="@drawable/tm_refresh_anim"
+            ptr:ptrDrawableEnd="@drawable/tm_refresh_anim"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrHeaderTextColor="@color/color_ju_yellow"
+            ptr:ptrMode="both"
+            ptr:ptrScrollingWhileRefreshingEnabled="false" >
+    </com.view.pulltorefresh.PullToRefreshListView>
+</LinearLayout>

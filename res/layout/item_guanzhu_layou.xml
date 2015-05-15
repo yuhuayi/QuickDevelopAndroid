@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_marginRight="@dimen/dp_10">
+
+    <ImageView
+            android:id="@+id/attention_state_iv"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:src="@drawable/icon_add_attention2"
+            android:layout_gravity="center_horizontal"/>
+    <TextView
+            android:id="@+id/attention_state_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加关注"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/gray"/>
+</LinearLayout>

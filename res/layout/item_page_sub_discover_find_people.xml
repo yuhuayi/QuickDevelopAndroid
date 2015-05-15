@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.view.common.CircleImageView
+                android:id="@+id/find_friend_photo"
+                android:layout_width="@dimen/dp_68"
+                android:layout_height="@dimen/dp_68"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_14"
+                android:src="@drawable/head_portrait"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_toRightOf="@id/find_friend_photo"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/find_friend_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="姓名"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_16"/>
+
+                <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_toRightOf="@id/find_friend_name"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:textColor="@color/semi_transparent"
+                        android:src="@drawable/icon_discover_renzheng"/>
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/find_friend_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:text="签到"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp_14"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/tv_find_friend_discover"
+                        style="@style/teme_label_style"
+                        android:text="发现:0"
+                       />
+
+                <TextView
+                        android:id="@+id/tv_find_friend_zuopin"
+                        style="@style/teme_label_style"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:text="作品:0"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_6"
+                android:orientation="vertical">
+
+            <include
+                    android:id="@+id/attention_ll"
+                    layout="@layout/item_guanzhu_layou"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

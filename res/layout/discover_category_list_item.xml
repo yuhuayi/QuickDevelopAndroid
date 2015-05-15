@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_98"
+            android:background="@drawable/bj"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_6">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    >
+                <TextView
+                        android:id="@+id/category_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="空间设计"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_20"/>
+                <TextView
+                        android:id="@+id/detail_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="品牌/包装"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_14"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        />
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="49dp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_6">
+
+                <TextView
+                        android:id="@+id/join_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/button_24_gray_shape"
+                        android:paddingBottom="@dimen/dp_4"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_4"
+                        android:text="0 已认领"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp_16"/>
+
+                <TextView
+                        android:id="@+id/un_join_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dp_6"
+                        android:background="@drawable/button_24_gray_shape"
+                        android:paddingBottom="@dimen/dp_4"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_4"
+                        android:text="0 未认领"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp_16"/>
+            </LinearLayout>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/textView2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_6"
+                    android:src="@drawable/category_right_arrow"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

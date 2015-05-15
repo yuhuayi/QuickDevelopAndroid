@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teme_title_color"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+            android:id="@+id/title_rl"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48">
+        <ImageView
+                style="@style/title_left_bt_style"
+                   android:id="@+id/title_back_img"/>
+
+        <TextView android:layout_centerInParent="true"
+                  android:layout_width="wrap_content"
+                  android:textSize="@dimen/sp_18"
+                  android:textStyle="bold"
+                  android:textColor="@color/black"
+                  android:layout_height="wrap_content" android:text="职业签名" android:id="@+id/textView"/>
+        
+        <TextView 
+            android:id="@+id/complete_tv"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:padding="@dimen/dp_6"
+            android:textColor="#0067ff"
+            android:textSize="@dimen/sp_16"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/dp_8"
+            />
+    </RelativeLayout>
+    
+	<LinearLayout 
+	    android:id="@+id/company_ll"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+	    >
+	    <TextView 
+	         android:id="@+id/company_et"
+	         android:layout_width="match_parent"
+        	 android:layout_height="wrap_content"
+        	 android:hint="所在公司"
+        	 android:background="@null"
+        	 android:textColor="@color/black"
+        	 android:textColorHint="@color/gray"
+        	 android:textSize="@dimen/sp_18"
+        	 android:paddingLeft="@dimen/dp_14"
+        	 android:layout_marginTop="@dimen/dp_16"
+        	 android:layout_marginBottom="@dimen/dp_16"
+	        />
+	     <View 
+   	        android:layout_width="wrap_content"
+   	    	android:layout_height="@dimen/dp_0_0_5"
+   	    	android:background="@color/background_gray"
+   	    	android:layout_marginLeft="@dimen/dp_14"
+   	        />
+	     
+	     <TextView 
+	         android:id="@+id/position_et"
+	         android:layout_width="match_parent"
+        	 android:layout_height="wrap_content"
+        	 android:hint="现任职位"
+        	 android:textColorHint="@color/gray"
+        	 android:background="@null"
+        	 android:textColor="@color/black"
+        	 android:textSize="@dimen/sp_18"
+        	 android:paddingLeft="@dimen/dp_14"
+        	 android:paddingTop="@dimen/dp_16"
+        	 android:paddingBottom="@dimen/dp_16"
+	        />
+	</LinearLayout>
+</LinearLayout>

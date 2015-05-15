@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/teme_title_color"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+            android:id="@+id/title_rl"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:background="@color/teme_title_color"
+            android:layout_height="@dimen/dp_48">
+        <ImageView
+                   android:id="@+id/title_back_img"
+                   style="@style/title_left_bt_style"/>
+
+        <TextView android:layout_centerInParent="true"
+                  android:layout_width="wrap_content"
+                  android:textSize="@dimen/sp_18"
+                  android:textStyle="bold"
+                  android:textColor="@color/black"
+                  android:layout_height="wrap_content" android:text="手机通讯录" android:id="@+id/textView"/>
+    </RelativeLayout>
+    <com.view.pulltorefresh.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto/com.goldav.goldavB2C"
+            android:id="@+id/mobile_contacts_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:divider="@drawable/teme_listview_divider"
+            android:background="@color/teme_title_color"
+            ptr:ptrAnimationStyle="rotate"
+            ptr:ptrDrawableStart="@drawable/tm_refresh_anim"
+            ptr:ptrDrawableEnd="@drawable/tm_refresh_anim"
+            ptr:ptrHeaderTextColor="@color/semi_transparent"
+            ptr:ptrMode="both"
+            ptr:ptrScrollingWhileRefreshingEnabled="false"  >
+    </com.view.pulltorefresh.PullToRefreshListView>	
+</LinearLayout>

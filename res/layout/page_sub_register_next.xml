@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/teme_title_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+            android:id="@+id/title_rl"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:background="@color/teme_title_color"
+            android:layout_height="@dimen/dp_48">
+        <ImageView  style="@style/title_left_bt_style"
+                   android:id="@+id/title_back_img"
+                  />
+
+        <TextView android:layout_centerInParent="true"
+                  android:layout_width="wrap_content"
+                  android:textSize="@dimen/sp_18"
+                  android:textStyle="bold"
+                  android:textColor="@color/black"
+                  android:layout_height="wrap_content" android:text="设置密码" android:id="@+id/textView"/>
+
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:background="@color/teme_title_color"
+                    android:orientation="vertical" android:layout_below="@+id/title_rl"
+                    android:layout_alignParentLeft="true">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/input_item_height"
+                        android:background="@color/white"
+                        android:layout_marginTop="@dimen/dp_1">
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0_5"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/half_gray"/>
+            <EditText android:layout_width="match_parent" android:layout_height="@dimen/input_item_height"
+                      android:background="@null"
+                      android:text=""
+                      android:id="@+id/regist_code_et"
+                      android:singleLine="true"
+                      android:gravity="center_vertical"
+                      android:textSize="@dimen/sp_16"
+                      android:textColorHint="@color/half_gray"
+                      android:textColor="@color/black"
+                      android:hint="验证码"
+                      android:padding="@dimen/dp_2"
+                      android:layout_marginLeft="17dp"
+                      android:layout_centerVertical="true" android:layout_toLeftOf="@+id/regist_verification_bt"/>
+            <Button
+                    android:id="@+id/regist_verification_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="17dp"
+                    android:background="@drawable/button_blue_shape"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:paddingLeft="@dimen/dp_14"
+                    android:paddingRight="@dimen/dp_14"
+                    android:paddingTop="@dimen/dp_8"
+                    android:text="获取验证码"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14" android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0_5"
+                    android:background="@color/half_gray" android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"/>说
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_138"
+                        android:background="@color/teme_title_color"
+                        android:orientation="vertical" android:id="@+id/linearLayout"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="84dp">
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0_5"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/half_gray"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/input_item_height"
+                            android:background="@color/white"
+                            android:layout_marginTop="@dimen/dp_1"
+                            android:id="@+id/relativeLayout">
+                <EditText android:layout_width="match_parent" android:layout_height="@dimen/input_item_height"
+                          android:background="@null"
+                          android:text=""
+                          android:singleLine="true"
+                          android:gravity="center_vertical"
+                          android:textSize="@dimen/sp_16"
+                          android:textColorHint="@color/half_gray"
+                          android:textColor="@color/black"
+                          android:hint="密码6~20位字符"
+                          android:id="@+id/login_psd_et"
+                          android:padding="@dimen/dp_2"
+                          android:layout_marginLeft="17dp"
+                          android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/input_item_height"
+                            android:background="@color/white"
+                            android:layout_below="@+id/relativeLayout" android:layout_alignParentLeft="true"
+                            android:id="@+id/relativeLayout2">
+                <EditText android:layout_width="match_parent" android:layout_height="@dimen/input_item_height"
+                          android:textSize="@dimen/sp_16"
+                          android:hint="真实姓名或常用艺名"
+                          android:gravity="center_vertical"
+                          android:id="@+id/login_name_et"
+                          android:padding="@dimen/dp_2"
+                          android:text=""
+                          android:singleLine="true"
+                          android:textColorHint="@color/half_gray"
+                          android:textColor="@color/black"
+                          android:background="@null"
+                          android:layout_marginLeft="17dp"
+                          android:layout_centerVertical="true"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0_5"
+                        android:background="@color/half_gray" android:layout_alignParentTop="true"
+                        android:layout_alignLeft="@+id/login_name_et" android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/input_item_height"
+                            android:background="@color/white"
+                            android:id="@+id/hangye_rl"
+                            android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/relativeLayout2">
+                <TextView android:layout_width="match_parent" android:layout_height="@dimen/input_item_height"
+                          android:textSize="@dimen/sp_16"
+                          android:gravity="center_vertical"
+                          android:padding="@dimen/dp_2"
+                          android:text=""
+                          android:hint="行业/职位"
+                          android:id="@+id/login_position_et"
+                          android:singleLine="true"
+                          android:textColorHint="@color/half_gray"
+                          android:textColor="@color/black"
+                          android:background="@null"
+                          android:layout_marginLeft="17dp"
+                          android:layout_centerVertical="true" />
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0_5"
+                        android:background="@color/half_gray" android:layout_alignTop="@+id/login_position_et"
+                        android:layout_alignLeft="@+id/login_position_et"/>
+            </RelativeLayout>
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0_5"
+                    android:background="@color/half_gray" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12"
+                android:background="@drawable/button_blue_shape"
+                android:text="完成"
+                android:layout_marginLeft="@dimen/dp_18"
+                android:layout_marginRight="@dimen/dp_18"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18"
+                android:id="@+id/login_bt"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginTop="52dp"/>
+    </RelativeLayout>
+</RelativeLayout>

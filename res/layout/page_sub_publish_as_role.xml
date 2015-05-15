@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+		  <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/teme_title_color" >
+
+        <ImageView
+            android:id="@+id/title_back_img"
+            style="@style/title_left_bt_style" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/title_back_img"
+            android:background="@drawable/search_bar"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/search_bar_background_shape"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:paddingLeft="@dimen/dp_4"
+                    android:scaleType="center"
+                    android:src="@drawable/teme_search_icon" />
+
+                <com.view.common.ClearEditText
+                    android:id="@+id/search_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="搜索角色(关键字)"
+                    android:padding="@dimen/dp_4"
+                    android:singleLine="true"
+                    android:textColor="@color/teme_title_color"
+                    android:textColorHint="@color/teme_title_color" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="@dimen/dp_4"
+                android:text="搜索"
+                android:textColor="@color/gray_blue"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_comapny_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/add_city_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:text="添加角色:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_0_0_5"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:background="@color/background_gray" />
+    </RelativeLayout>
+    
+	<com.view.pulltorefresh.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto/com.goldav.goldavB2C"
+            android:id="@+id/role_list"
+            android:background="@android:color/white"
+            android:cacheColorHint="#00000000"
+            android:padding="@dimen/dp_4"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrDrawable="@drawable/pulltorefresh_down_arrow"
+            ptr:ptrHeaderTextColor="@color/color_ju_yellow"
+            ptr:ptrMode="both"
+            ptr:ptrScrollingWhileRefreshingEnabled="false" >
+    </com.view.pulltorefresh.PullToRefreshListView>
+</LinearLayout>

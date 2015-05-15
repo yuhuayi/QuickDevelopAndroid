@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <FrameLayout
+            android:background="@color/white"
+            android:id="@+id/start_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="horizontal">
+    </FrameLayout>
+    <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/register_login_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/help_four_back">
+        <LinearLayout android:layout_width="match_parent" android:orientation="vertical"
+                      android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+                      android:layout_alignParentLeft="true">
+            <Button android:id="@+id/register_bt" android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:text="注册"
+                    android:textSize="@dimen/sp_18" android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:textColor="@color/white" android:background="@drawable/button_blue_shape"/>
+            <Button android:id="@+id/login_bt" android:layout_width="match_parent" android:layout_height="@dimen/dp_40"
+                    android:text="登陆"
+                    android:textSize="@dimen/sp_18" android:layout_margin="@dimen/dp_12"
+                    android:textColor="@color/qblue" android:background="@drawable/button_white_shape"/>
+            <Button android:id="@+id/start_bt" android:layout_width="match_parent" android:layout_height="@dimen/dp_40"
+                    android:text="先逛一逛"
+                    android:textSize="@dimen/sp_18" android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:textColor="@color/gray" android:background="@null"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_18"
+    android:layout_marginTop="@dimen/dp_12"
+    android:background="@drawable/checkbox_protocol_selector2"
+    android:button="@null"
+    android:checked="false"
+    android:clickable="true"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingLeft="@dimen/dp_12"
+    android:paddingRight="@dimen/dp_12"
+    android:paddingTop="@dimen/dp_10"
+    android:text="安洁莉娜"
+    android:textColor="@color/black"
+    android:textSize="@dimen/sp_14" />

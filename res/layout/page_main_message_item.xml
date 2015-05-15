@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:background="@color/white"
+   	    >
+   	    <ImageView 
+   	        android:id="@+id/people_picture"
+   	        android:layout_width="@dimen/dp_68"
+   	    	android:layout_height="@dimen/dp_68"
+   	    	android:background="@android:drawable/ic_lock_lock"
+   	    	android:layout_centerVertical="true"
+   	    	android:layout_margin="@dimen/dp_12"
+   	        />
+   	    
+   	    <TextView 
+   	        android:id="@+id/people_name"
+   	        android:layout_width="wrap_content"
+   	    	android:layout_height="wrap_content"
+   	        android:text="苏橙橙"
+   	        android:layout_toRightOf="@id/people_picture"
+   	        android:textSize="@dimen/sp_20"
+   	        android:layout_marginTop="@dimen/dp_18"
+   	        />
+   	    <TextView 
+   	         android:id="@+id/people_zhiwei"	
+   	         android:layout_width="wrap_content"
+   	    	 android:layout_height="wrap_content"
+   	    	 android:text="正邦设计总监"
+   	    	 android:layout_alignLeft="@id/people_name"
+   	    	 android:layout_below="@id/people_name"   	    	    	    	 
+   	    	 android:layout_marginTop="@dimen/dp_5"
+   	    	 android:textSize="@dimen/sp_18"
+   	    	 android:textColor="@color/gray"
+   	        />
+   	    <TextView 
+   	         android:layout_width="wrap_content"
+   	    	 android:layout_height="wrap_content"
+   	    	 android:layout_alignParentRight="true"
+   	    	 android:layout_marginRight="@dimen/dp_14"
+   	    	 android:layout_alignTop="@id/people_name"
+   	    	 android:text="昨天"
+   	    	 android:textSize="@dimen/sp_14"
+   	    	 android:textColor="@color/gray"
+   	    	 
+   	        />   	    
+   	</RelativeLayout>

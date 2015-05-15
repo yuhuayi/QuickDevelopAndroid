@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/dp_4"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/bus_line_name_tv" android:layout_width="wrap_content"
+                  android:layout_margin="@dimen/dp_4"
+                  android:layout_height="wrap_content"
+                  android:text="429"
+                  android:textColor="@color/black" android:textSize="@dimen/sp_16"
+                  android:layout_alignParentTop="true" android:layout_alignParentLeft="true"/>
+        <TextView android:id="@+id/bus_line_direction_tv" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:text="清华园-东北旺"
+                  android:textColor="@color/black" android:textSize="@dimen/sp_12"
+                  android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+    <Button android:id="@+id/bus_line_set_remind_tv" android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:padding="@dimen/dp_6"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="@dimen/dp_12"
+              android:background="@drawable/button_blue_shape"
+              android:text="到站提醒"
+              android:textColor="@color/white" android:textSize="@dimen/sp_16"/>
+</RelativeLayout>

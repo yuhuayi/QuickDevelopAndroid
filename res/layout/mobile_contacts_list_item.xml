@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/select_city"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_8"
+    android:background="@color/white" >
+
+    <com.view.common.CircleImageView
+        android:id="@+id/head_portrait_img"
+        android:layout_width="@dimen/dp_34"
+        android:layout_height="@dimen/dp_34"
+        android:layout_margin="@dimen/dp_10"
+        android:src="@drawable/head_portrait"
+
+        android:layout_centerVertical="true"
+            />
+
+    <TextView
+        android:id="@+id/contact_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/head_portrait_img"
+        android:text="张大力"
+        android:textSize="@dimen/sp_16" />
+
+   <LinearLayout
+	       	    android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_alignParentRight="true"
+		    	android:orientation="vertical"
+		    	android:layout_centerVertical="true"
+		    	android:layout_marginRight="@dimen/dp_6">
+                <include android:id="@+id/attention_ll" layout="@layout/item_guanzhu_layou"/>
+	       	</LinearLayout>
+	<TextView 
+	    android:id="@+id/invation_tv"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_18"
+        android:text="邀请"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/gray"
+	    />
+</RelativeLayout>

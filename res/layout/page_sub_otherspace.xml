@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="@dimen/dp_10"
+	    >
+	    <ImageView 
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/ic_back"
+    		android:layout_marginLeft="@dimen/dp_18"
+	        />
+	    
+	    <ImageView 
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/ic_back"
+    		android:layout_marginLeft="@dimen/dp_10"
+    		android:layout_alignParentRight="true"
+    		android:layout_marginRight="@dimen/dp_18"
+	        />
+	</RelativeLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+
+	    <ImageView
+	        android:layout_width="@dimen/dp_68"
+	        android:layout_height="@dimen/dp_68"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="@dimen/dp_28"
+	        android:background="@drawable/ic_launcher" />
+
+	    <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="@dimen/dp_16" >
+
+	        <TextView
+	            android:id="@+id/tv_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="李胜科"
+	            android:textSize="@dimen/sp_34" />
+
+	        <ImageView
+	            android:layout_width="@dimen/dp_34"
+	            android:layout_height="@dimen/dp_34"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="@dimen/dp_5"
+	            android:layout_toRightOf="@id/tv_name"
+	            android:src="@drawable/default_face" />
+	    </RelativeLayout>
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:text="正帮设计总监"
+	        android:layout_marginTop="@dimen/dp_14"
+	        android:textSize="@dimen/sp_22" 
+	        android:textColor="@color/gray"
+	        />
+	</LinearLayout>
+	
+	 <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_18"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="@dimen/dp_32"
+        />
+	
+	 <RelativeLayout 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+	     >
+	     <TextView 
+	         android:id="@+id/person_guanzhu"
+	         android:layout_width="wrap_content"
+       		 android:layout_height="wrap_content"
+       		 android:text="关注:358"
+       		 android:layout_marginLeft="@dimen/dp_22"
+       		 android:textSize="@dimen/sp_16"
+       		 android:textColor="@color/gray"
+	         />
+	      <TextView 
+	         android:id="@+id/person_fensi"
+	         android:layout_width="wrap_content"
+       		 android:layout_height="wrap_content"
+       		 android:text="粉丝:127"
+       		 android:layout_marginLeft="@dimen/dp_14"
+       		 android:textSize="@dimen/sp_16"
+       		 android:textColor="@color/gray"
+       		 android:layout_toRightOf="@id/person_guanzhu"
+	         />
+	       <TextView 
+	         android:id="@+id/person_beizan"  
+	         android:layout_width="wrap_content"
+       		 android:layout_height="wrap_content"
+       		 android:text="被赞:4963"
+       		 android:layout_marginLeft="@dimen/dp_14"
+       		 android:textSize="@dimen/sp_16"
+       		 android:textColor="@color/gray"
+       		 android:layout_toRightOf="@id/person_fensi"
+	         />
+	        <TextView 
+	         android:id="@+id/person_zhuanqu"  
+	         android:layout_width="wrap_content"
+       		 android:layout_height="wrap_content"
+       		 android:text="专区"
+       		 android:layout_marginLeft="@dimen/dp_14"
+       		 android:textSize="@dimen/sp_16"
+       		 android:textColor="@color/gray"
+       		 android:layout_toRightOf="@id/person_beizan"
+	         />
+	        <ImageView 
+	         android:layout_width="@dimen/dp_22"
+       		 android:layout_height="@dimen/dp_22"  
+       		 android:layout_toRightOf="@id/person_zhuanqu"
+       		 android:src="@drawable/default_face"
+       		 android:layout_marginLeft="@dimen/dp_2"
+	            />
+	 </RelativeLayout>
+	 
+	 <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_18"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="@dimen/dp_16"
+        />
+	 
+	 <LinearLayout 
+	    android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_84"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:orientation="horizontal"
+	     >
+	     <Button 
+	         android:layout_width="0dp"
+        	 android:layout_height="wrap_content"
+        	 android:layout_weight="1"
+        	 android:text="私信"
+        	 android:background="@drawable/button_blue_shape"
+        	 android:textSize="@dimen/sp_16"
+        	 android:textColor="@color/white"
+        	 android:paddingLeft="@dimen/dp_40"
+        	 android:paddingTop="@dimen/dp_12"
+        	 android:paddingBottom="@dimen/dp_12"
+        	 android:layout_gravity="center_vertical"
+        	 android:drawableLeft="@drawable/back_icon"
+        	 android:gravity="center"
+	         />
+	    <Button 
+	         android:layout_width="0dp"
+        	 android:layout_height="wrap_content"
+        	 android:layout_weight="1"
+        	 android:text="加关注"
+        	 android:background="@drawable/button_blue_shape"
+        	 android:textSize="@dimen/sp_16"
+        	 android:textColor="@color/white"
+        	 android:paddingLeft="@dimen/dp_32"
+        	 android:paddingTop="@dimen/dp_12"
+        	 android:paddingBottom="@dimen/dp_12"
+        	 android:layout_gravity="center_vertical"
+        	 android:drawableLeft="@drawable/back_icon"
+        	 android:layout_marginRight="@dimen/dp_18"
+        	 android:layout_marginLeft="@dimen/dp_18"
+	         />
+	     
+
+	     
+	 </LinearLayout>
+</LinearLayout>

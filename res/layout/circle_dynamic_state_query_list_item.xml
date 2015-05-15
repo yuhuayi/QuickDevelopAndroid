@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_6"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+        <com.view.common.CircleImageView
+                android:id="@+id/head_portrait_img"
+                android:layout_width="@dimen/dp_28"
+                android:layout_height="@dimen/dp_28"
+                   
+
+                android:src="@drawable/head_portrait"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:text="张大力"
+                  android:textColor="@color/black" android:textSize="@dimen/sp_16"
+                  android:layout_gravity="center_vertical" android:id="@+id/textView2"
+                  android:layout_centerVertical="true" android:layout_toRightOf="@+id/head_portrait_img"
+                  android:layout_marginLeft="21dp"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:text="质疑了"
+                  android:textColor="@color/black" android:textSize="@dimen/sp_16"
+                  android:layout_gravity="center_vertical" android:id="@+id/textView"
+                   android:layout_toRightOf="@+id/textView2"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="23dp"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:text="3小时前"
+                  android:textColor="@color/black" android:textSize="@dimen/sp_16"
+                  android:layout_gravity="center_vertical"    android:layout_centerVertical="true"
+                  android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:text=" @苏成成 担任 角纸设计出版工作室 的设计师"
+              android:textColor="@color/black" android:textSize="@dimen/sp_16"
+              android:layout_marginLeft="@dimen/dp_16"
+              android:layout_centerVertical="true"
+              android:layout_marginTop="@dimen/dp_12"
+              android:layout_marginBottom="@dimen/dp_12"
+              android:layout_gravity="center_vertical"/>
+</LinearLayout>

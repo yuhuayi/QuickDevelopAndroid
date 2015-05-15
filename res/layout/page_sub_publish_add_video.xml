@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/teme_title_color"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48">
+        <ImageView android:id="@+id/title_back_img"
+                   style="@style/title_left_bt_style"/>
+        <TextView android:layout_centerInParent="true"
+                  android:layout_width="wrap_content"
+                  android:textSize="@dimen/sp_18"
+                  android:textStyle="bold"
+                  android:textColor="@color/black"
+                  android:layout_height="wrap_content" android:text="填写视频" android:id="@+id/textView"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存"
+                android:id="@+id/add_video_save"
+                android:padding="@dimen/dp_8"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/gray_blue"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_10"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/search_video_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/white"
+            >
+        <EditText
+            	android:id="@+id/URL_address_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_18"
+                android:hint="URL地址"
+                android:textColorHint="@color/teme_title_color"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:background="@null"
+                />
+
+
+        <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_0_0_5"
+                android:layout_alignParentBottom="true"
+                android:background="@color/background_gray"
+                android:layout_marginLeft="@dimen/dp_14"
+                />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/video_add_picture_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/white"
+            >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_18"
+                android:text="封面图片"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_14"
+                />
+        <ImageView
+                android:id="@+id/add_video_picture_iv"
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"
+                android:layout_marginRight="@dimen/dp_4"
+                android:src="@drawable/icon_add_picture"  android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageView"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/expand_close" android:id="@+id/imageView"/>
+    </RelativeLayout>
+</LinearLayout>
