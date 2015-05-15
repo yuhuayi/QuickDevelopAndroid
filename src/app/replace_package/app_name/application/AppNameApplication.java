@@ -43,6 +43,8 @@ import java.util.List;
 
 public class AppNameApplication extends Application {
     
+    // 感觉git 碉堡了
+    
     // 退出应用程序,销毁Activity相关
     public static List<Activity> activitys = null;
     public static String project_id;
