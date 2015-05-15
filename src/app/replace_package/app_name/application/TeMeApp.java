@@ -42,6 +42,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class TeMeApp extends Application {
+    
+    //感觉很诡异
+    
 
     // 退出应用程序,销毁Activity相关
     public static List<Activity> activitys = null;
