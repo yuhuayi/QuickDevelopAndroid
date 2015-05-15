@@ -21,9 +21,10 @@ import java.util.Map;
  *
  * @author user
  */
-public class CrashHandler implements UncaughtExceptionHandler {
+public class mainswitch implements UncaughtExceptionHandler {
 
     public static final String TAG = "CrashHandler";
+    // 分支的代码
     
     // 主线和分支都有的代码
 
