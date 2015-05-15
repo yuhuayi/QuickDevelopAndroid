@@ -24,7 +24,8 @@ import java.util.Map;
 public class CrashHandler implements UncaughtExceptionHandler {
 
     public static final String TAG = "CrashHandler";
-    
+  
+    // 这个才是分支代码
     // 主线和分支都有的代码
 
     // CrashHandler 实例
